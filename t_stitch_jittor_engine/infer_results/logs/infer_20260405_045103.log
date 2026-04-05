@@ -1,0 +1,4 @@
+[2026-04-05 04:51:03] [INFO] Runtime | use_cuda=0 amp_level=0 in_mpi=False
+[2026-04-05 04:51:05] [INFO] Loaded checkpoint: /workspace/t_stitch_jittor_engine/checkpoints/best.pkl
+[2026-04-05 04:51:18] [INFO] Infer progress: 1/7
+[2026-04-05 04:52:06] [INFO] Inference done. Results saved to /workspace/t_stitch_jittor_engine/infer_results

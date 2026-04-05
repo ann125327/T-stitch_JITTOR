@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TStitch Train",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true,
+      "args": [
+        "--mode", "train",
+        "--data_root", "${workspaceFolder}/data",
+        "--ckpt_dir", "${workspaceFolder}/checkpoints",
+        "--epochs", "50",
+        "--batch_size", "2",
+        "--num_frames", "3",
+        "--crop_size", "192",
+        "--use_cuda", "1"
+      ]
+    },
+    {
+      "name": "TStitch Infer",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true,
+      "args": [
+        "--mode", "infer",
+        "--checkpoint", "${workspaceFolder}/checkpoints/best.pkl",
+        "--input_sequence", "${workspaceFolder}/demo_frames",
+        "--output_dir", "${workspaceFolder}/infer_results",
+        "--num_frames", "3",
+        "--use_cuda", "1"
+      ]
+    }
+  ]
+}
+

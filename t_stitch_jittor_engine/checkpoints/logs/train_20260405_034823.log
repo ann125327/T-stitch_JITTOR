@@ -1,0 +1,2 @@
+[2026-04-05 03:48:23] [INFO] Runtime | use_cuda=0 amp_level=0 in_mpi=False
+[2026-04-05 03:49:29] [INFO] Epoch[0] Step[0/520] total=0.066484 rec=0.053003 edge=0.062007 temporal=0.005419

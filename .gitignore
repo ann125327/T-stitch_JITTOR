@@ -1,0 +1,22 @@
+# 排除Jittor缓存文件
+t_stitch_jittor_engine/.jittor_home/.cache/
+
+# 排除嵌入的git仓库
+original_pytorch/
+
+# 排除Claude目录
+.claude/
+
+# 排除Docker相关文件
+.dockerignore
+Dockerfile
+docker-compose.yml
+run_docker.bat
+
+# 排除其他不需要的文件
+*.pdf
+
+# 只包含主要的Python文件和目录
+!t_stitch_jittor_engine/
+!data/
+!*.py

@@ -1,0 +1,23 @@
+[2026-04-05 03:46:16] [INFO] Runtime | use_cuda=0 amp_level=0 in_mpi=False
+[2026-04-05 03:46:32] [ERROR] Train step failed at epoch=0 step=0
+[2026-04-05 03:46:32] [ERROR] Traceback (most recent call last):
+  File "/workspace/t_stitch_jittor_engine/train.py", line 116, in train_one_epoch
+    outputs = model(lq)
+              ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jittor/__init__.py", line 1211, in __call__
+    return self.execute(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/t_stitch_jittor_engine/model.py", line 243, in execute
+    left_aligned_l1, _, left_loss_l1 = self._align_and_aggregate(self.align_l1, center_feats[0], left_l1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/t_stitch_jittor_engine/model.py", line 215, in _align_and_aggregate
+    aligned, _, loss = align_module(ref_feat, feat)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jittor/__init__.py", line 1211, in __call__
+    return self.execute(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/t_stitch_jittor_engine/model.py", line 98, in execute
+    mask = nn.sigmoid(self.mask_net(inp))
+           ^^^^^^^^^^
+AttributeError: module 'jittor.nn' has no attribute 'sigmoid'
+

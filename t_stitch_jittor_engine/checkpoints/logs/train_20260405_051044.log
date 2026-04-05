@@ -1,0 +1,13 @@
+[2026-04-05 05:10:44] [INFO] Runtime | use_cuda=0 amp_level=0 in_mpi=False
+[2026-04-05 05:10:44] [INFO] Runtime | use_cuda=0 amp_level=0 in_mpi=False
+[2026-04-05 05:10:51] [INFO] Saved initial checkpoint: /workspace/t_stitch_jittor_engine/checkpoints/latest.pkl
+[2026-04-05 05:10:51] [INFO] Saved initial checkpoint: /workspace/t_stitch_jittor_engine/checkpoints/latest.pkl
+[2026-04-05 05:11:12] [INFO] Epoch[0] Step[0/28] total=0.038692 rec=0.033858 edge=0.005427 temporal=0.002023
+[2026-04-05 05:11:14] [INFO] Epoch[0] Step[0/28] total=0.038692 rec=0.033858 edge=0.005427 temporal=0.002023
+[2026-04-05 05:12:29] [INFO] Epoch[0] Step[1/28] total=0.040430 rec=0.033508 edge=0.014279 temporal=0.002425
+[2026-04-05 05:16:58] [INFO] Validation | loss=0.034910 psnr=29.5763 ssim=0.9749
+[2026-04-05 05:17:34] [INFO] New best checkpoint saved: /workspace/t_stitch_jittor_engine/checkpoints/best.pkl (metric=29.5763)
+[2026-04-05 05:17:34] [INFO] Epoch[1/1] done | train_loss=0.038692 best_metric=29.5763
+[2026-04-05 05:17:39] [INFO] Validation | loss=0.014434 psnr=37.5267 ssim=0.9968
+[2026-04-05 05:17:43] [INFO] New best checkpoint saved: /workspace/t_stitch_jittor_engine/checkpoints/best.pkl (metric=37.5267)
+[2026-04-05 05:17:43] [INFO] Epoch[1/1] done | train_loss=0.040430 best_metric=37.5267
